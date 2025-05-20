@@ -22,9 +22,9 @@ func Load() {
 	fmt.Println("Creating admin...")
 
 	admin := models.User{
-		Email:    "admin@babelcoder.com",
-		Password: "passw0rd",
-		Name:     "Admin",
+		Email:    "your_mail",
+		Password: "your_password",
+		Name:     "your_name",
 		Role:     models.RoleAdmin,
 		Avatar:   "https://i.pravatar.cc/100",
 	}
@@ -47,7 +47,7 @@ func Load() {
 		user := models.User{
 			Name:     faker.Name(),
 			Email:    faker.Email(),
-			Password: "passw0rd",
+			Password: "your_password",
 			Avatar:   "https://i.pravatar.cc/100?" + strconv.Itoa(i),
 			Role:     userRoles[rand.Intn(len(userRoles))],
 		}
